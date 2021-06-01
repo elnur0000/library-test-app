@@ -14,7 +14,7 @@ afterAll(async () => {
 })
 
 beforeEach(async () => {
-  await BookModel.deleteMany()
+  await BookModel.deleteMany({})
 })
 
 const bookQuery = `

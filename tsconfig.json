@@ -1,6 +1,6 @@
 {
  "compilerOptions": {
-     "outDir": "../build",
+     "outDir": "./build",
      "baseUrl": "./src",
      "rootDirs": [
          "./"
@@ -43,9 +43,9 @@
      "./src/app.ts"
  ],
  "include": [
-     "**/*"
+     "./src/**/*"
  ],
  "exclude": [
-     "../node_modules/**/*", "build"
+     "./node_modules/**/*", "build"
  ]
 }

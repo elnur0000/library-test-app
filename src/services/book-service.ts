@@ -39,7 +39,7 @@ class BookService {
   }
 
   deleteAll () {
-    return BookModel.deleteMany().exec()
+    return BookModel.deleteMany({}).exec()
   }
 
 }

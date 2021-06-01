@@ -5,7 +5,7 @@ import { GqlObjectIdScalar } from '../graphql/scalars/object-id'
 
 export default () => buildSchema({
   resolvers: [
-    path.join(__dirname,'..','domains','*','resolver.ts')
+    path.join(__dirname,'..','domains','*','resolver*')
   ],
   emitSchemaFile: 'src/common/schema.graphql',
   scalarsMap: [{ scalar: GqlObjectIdScalar, type: ObjectId }]
