@@ -2,7 +2,7 @@ import { ApolloError } from 'apollo-server-express'
 
 export class AuthenticationError extends ApolloError {
   constructor (message?: string) {
-    super(message || 'Nothing was found', 'UNAUTHENTICATED')
+    super(message || 'You are not authorized for this action', 'UNAUTHENTICATED')
 
     Object.defineProperty(this, 'name', {})
   }
